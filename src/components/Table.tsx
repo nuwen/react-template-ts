@@ -34,13 +34,13 @@ function Table({data}: ITableProps) {
             <thead>
                 <tr>
                     {headers.map((header) => (
-                        <th>{header}</th>
+                        <th key={header}>{header}</th>
                     ))}
                 </tr>
             </thead>
             <tbody>
                 {mappedData.map((item) => (
-                    <TableRow data={item} />
+                    <TableRow key={item.id} data={item} />
                 ))}
             </tbody>
         </table>
