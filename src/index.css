@@ -68,3 +68,16 @@ h6 {
   margin: 20px;
   padding: 0;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root, #expenses {
+    height: 100%;
+}
+#expenses {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
